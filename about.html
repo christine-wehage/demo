@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    
+    <style>
+	    .unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+</style>
+    
+    <!-- Title -->
+    <title>Digital Accessibility | Challenge</title>
+  </head>
+  
+	<body oncontextmenu="return false"> 
+
+           
+         
+
+            <!-- Text -->
+            <p class="lead text-muted mb-7 mb-md-9">
+              Use your keyboard and a screen reader to complete the form. After completing the form your email client will open; send the automated email and your submission is complete.<br>
+            </p>
+            
+            <form action="mailto:christine.wehage@gmail.com?subject=Challenge" method="POST" enctype="multipart/form-data" name="EmailForm">
+	            
+	           <div>
+		           <h1 aria-label="Select one response from the radio buttons below. What is my favorite word?"class="display-2"> </h1>
+				   <input type="radio" id="appaloosa" name="favoriteWord" value="appaloosa"><br>
+				   		<label for="appaloosa" style="color:white" class="unselectable">appaloosa</label><br>
+				   <input type="radio" id="pamplemousse" name="favoriteWord" value="pamplemousse"><br>
+				   		<label for="pamplemousse" style="color:white" class="unselectable">pamplemousse</label><br>
+				   	<input type="radio" id="unabridged" name="favoriteWord" value="unabridged"><br>
+				   		<label for="unabridged" style="color:white" class="unselectable">unabridged</label><br>
+				   	<input type="radio" id="opossum" name="favoriteWord" value="opossum"><br>
+				   		<label for="opossum" style="color:white" class="unselectable">opossum</label><br>
+				   	<input type="radio" id="kerfuffle" name="favoriteWord" value="kerfuffle"><br>
+				   		<label for="kerfuffle" style="color:white" class="unselectable">kerfuffle</label><br>
+	           </div>
+
+	           <div>
+		           <h1 aria-label="When was the rehabilitation act enacted?"class="display-2"> </h1>
+				   <input type="radio" id="1999" name="rehabAct" value="1999"><br>
+				   		<label for="1999" style="color:white" class="unselectable">1999</label><br>
+					   <input type="radio" id="1996" name="rehabAct" value="1996"><br>
+				   		<label for="1996" style="color:white" class="unselectable">1996</label><br>
+				   	<input type="radio" id="1998" name="rehabAct" value="1998"><br>
+				   		<label for="1998" style="color:white" class="unselectable">1998</label><br>
+				   	<input type="radio" id="1973" name="rehabAct" value="1973"><br>
+				   		<label for="1973" style="color:white" class="unselectable">1973</label><br>
+				   	<input type="radio" id="2018" name="rehabAct" value="2018"><br>
+				   		<label for="2018" style="color:white" class="unselectable">2018</label><br>
+	           </div>
+	           
+	           <h1 aria-label="Press tab key once and then type your response to the question. Do not press enter. What media alternative is required for pre-recorded video?" class="display-2"> </h1>
+			<input type="text" size="29" name="liveMedia">
+
+			<h1 aria-label="Press tab key once and then type your full name. Then press Enter."class="display-2"> </h1>
+			<input type="text" size="19" name="name">
+          
+			</form>
+
+
+    <script>
+document.onkeydown = function(e) {
+  if(event.keyCode == 123) {
+     return false;
+  }
+  if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+     return false;
+  }
+  if(e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
+     return false;
+  }
+  if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+     return false;
+  }
+  if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+     return false;
+  }
+}
+</script>
+
+
+  </body>
+</html>
