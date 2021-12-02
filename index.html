@@ -1,185 +1,94 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
     
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="./assets/favicon/favicon.ico" type="image/x-icon" />
-    
-    <!-- Map CSS -->
-    <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css" />
-    
-    <!-- Libs CSS -->
-    <link rel="stylesheet" href="./assets/css/libs.bundle.css" />
-    
-    <!-- Theme CSS -->
-    <link rel="stylesheet" href="./assets/css/theme.bundle.css" />
+    <style>
+	    .unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+</style>
     
     <!-- Title -->
-    <title>Digital Accessibility | Demo</title>
+    <title>Digital Accessibility | Challenge</title>
   </head>
-<body oncontextmenu="return false"> 
-	  
-	  <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
-      <div class="container-fluid">
-    
-        <!-- Brand -->
-        <a class="navbar-brand" >
-         <em> Digital Accessibility Demo</em>
-        </a>
-    
-        <!-- Toggler -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-    
-        <!-- Collapse -->
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-    
-             
-          <!-- Navigation -->
-          <ul class="navbar-nav ms-auto">
-	                   <li class="nav-item ">
-              <a class="nav-link " id="navbarLandings" target="_blank" href="https://chrome.google.com/webstore/detail/screen-reader/kgejglhpjiefppelpmljglcjbhoiplfn?hl=en" aria-haspopup="true" aria-expanded="false">
-                Screen Reader
-              </a>
-            </li>
-            <li class="nav-item ">
-              <a class="nav-link " id="navbarLandings" target="_blank" href="https://www.accessibility-developer-guide.com/knowledge/keyboard-only/browsing-websites/" aria-haspopup="true" aria-expanded="false">
-                Keyboard Instructions
-              </a>
-            </li>
-          </ul>
-                    </div>
-                    </div>
-    </nav>
-    <br>
-    <br>
+  
+	<body oncontextmenu="return false"> 
 
-            <!-- Card -->
-            <div class="card card-row shadow-light-lg bg-cover overlay overlay-dark overlay-80 text-white mb-6" style="background-image: url(assets/img/covers/cover-8.jpg);">
-              <div class="row gx-0">
-                <div class="col-12 col-md-6">
+           
+         
 
-                  <!-- Body -->
-                  <a class="card-body" href="#!">
-	                  
-                    <p style="margin-top: 100px;" class="mb-0 text-white-80">
-                      It's easy to add a background image for the entire card, plus make text more legible by adding an overlay across the background with simple utility classes. These are all generated from the theme's variables!
-                    </p>
-                    <!-- Heading -->
-                    <h3 style="margin-top:-100px;">
-                      Background Photo + 80% Dark Overlay.
-                    </h3>
+            <!-- Text -->
+            <p class="lead text-muted mb-7 mb-md-9">
+              Use your keyboard and a screen reader to complete the form. After completing the form your email client will open; send the automated email and your submission is complete.<br>
+            </p>
+            
+            <form action="mailto:christine.wehage@gmail.com?subject=Challenge" method="POST" enctype="multipart/form-data" name="EmailForm">
+	            
+	           <div>
+		           <h1 aria-label="Select one response from the radio buttons below. What is my favorite word?"class="display-2"> </h1>
+				   <input type="radio" id="appaloosa" name="favoriteWord" value="appaloosa"><br>
+				   		<label for="appaloosa" style="color:white" class="unselectable">appaloosa</label><br>
+				   <input type="radio" id="pamplemousse" name="favoriteWord" value="pamplemousse"><br>
+				   		<label for="pamplemousse" style="color:white" class="unselectable">pamplemousse</label><br>
+				   	<input type="radio" id="unabridged" name="favoriteWord" value="unabridged"><br>
+				   		<label for="unabridged" style="color:white" class="unselectable">unabridged</label><br>
+				   	<input type="radio" id="opossum" name="favoriteWord" value="opossum"><br>
+				   		<label for="opossum" style="color:white" class="unselectable">opossum</label><br>
+				   	<input type="radio" id="kerfuffle" name="favoriteWord" value="kerfuffle"><br>
+				   		<label for="kerfuffle" style="color:white" class="unselectable">kerfuffle</label><br>
+	           </div>
 
-                    <!-- Text -->
+	           <div>
+		           <h1 aria-label="When was the rehabilitation act enacted?"class="display-2"> </h1>
+				   <input type="radio" id="1999" name="rehabAct" value="1999"><br>
+				   		<label for="1999" style="color:white" class="unselectable">1999</label><br>
+					   <input type="radio" id="1996" name="rehabAct" value="1996"><br>
+				   		<label for="1996" style="color:white" class="unselectable">1996</label><br>
+				   	<input type="radio" id="1998" name="rehabAct" value="1998"><br>
+				   		<label for="1998" style="color:white" class="unselectable">1998</label><br>
+				   	<input type="radio" id="1973" name="rehabAct" value="1973"><br>
+				   		<label for="1973" style="color:white" class="unselectable">1973</label><br>
+				   	<input type="radio" id="2018" name="rehabAct" value="2018"><br>
+				   		<label for="2018" style="color:white" class="unselectable">2018</label><br>
+	           </div>
+	           
+	           <h1 aria-label="Press tab key once and then type your response to the question. What media alternative is required for pre-recorded video?" class="display-2"> </h1>
+			<input type="text" size="29" name="liveMedia">
+
+			<h1 aria-label="Press tab key once and then type your full name."class="display-2"> </h1>
+			<input type="text" size="19" name="name">
+			
+			<input type="submit">
+          
+			</form>
 
 
-                  </a>
+    <script>
+document.onkeydown = function(e) {
+  if(event.keyCode == 123) {
+     return false;
+  }
+  if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+     return false;
+  }
+  if(e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
+     return false;
+  }
+  if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+     return false;
+  }
+  if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+     return false;
+  }
+}
+</script>
 
-                  <!-- Meta -->
-                  <a class="card-meta" href="#!">
-
-                    <!-- Divider -->
-                    <hr class="card-meta-divider bg-white-20">
-
-                    <!-- Avatar -->
-                    <div class="avatar avatar-sm me-2">
-                      <img src="assets/img/avatars/avatar-1.jpg" alt="..." class="avatar-img rounded-circle">
-                    </div>
-
-                    <!-- Author -->
-                    <h6 class="text-uppercase text-white-80 me-2 mb-0">
-                      Ab Hadley
-                    </h6>
-
-                    <!-- Date -->
-                    <p class="h6 text-uppercase text-white-80 mb-0 ms-auto">
-                      <time datetime="2019-05-02">May 02</time>
-                    </p>
-
-                  </a>
-
-                </div>
-              </div> <!-- / .row -->
-            </div>
-
-            <!-- Card -->
-            <div class="card card-row shadow-light-lg bg-cover overlay overlay-gradient-dark-end overlay-60 text-white mb-6" style="background-image: url(assets/img/photos/photo-30.jpg);">
-              <div class="row gx-0 justify-content-end">
-                <div class="col-12 col-md-6">
-
-                  <!-- Body -->
-                  <a class="card-body">
-
-                    <!-- Heading -->
-                    <h3>
-                      Background Photo + Gradient Overlay.
-                    </h3>
-
-                    <!-- Text -->
-                    <p class="mb-0 text-white-80">
-                      This blog card example shows a background image, but instead of an even wash across the entire background, it's a gradient from right to left controlled by another simple utility class.
-                    </p>
-
-                  </a>
-
-                  <!-- Meta -->
-                  <a class="card-meta" href="#!">
-
-                    <!-- Divider -->
-                    <hr class="card-meta-divider bg-white-20">
-
-                    <!-- Avatar -->
-                    <div class="avatar avatar-sm me-2">
-                      <img src="assets/img/avatars/avatar-2.jpg"  alt="adolfo's profile photo" class="avatar-img rounded-circle">
-                    </div>
-
-                    <!-- Author -->
-                    <h6 class="text-uppercase text-white-80 me-2 mb-0">
-                      Adolfo Hess
-                    </h6>
-
-                    <!-- Date -->
-                    <p class="h6 text-uppercase text-white-80 mb-0 ms-auto">
-                      <time datetime="2019-05-02">May 02</time>
-                    </p>
-
-                  </a>
-
-                </div>
-              </div> <!-- / .row -->
-            </div>
-
-          </div>
-        </div> <!-- / .row -->
-      </div> <!-- / .container -->
-    </section>
-              <!-- FOOTER -->
-    <footer class="py-8 py-md-11 bg-gray-200">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 ">
-           <center>  <a class="navbar-btn btn btn-sm btn-primary lift ms-auto" href="./about.html" target="_blank">
-           Challenge
-          </a>
-           </center>
-          </div>
-        </div> <!-- / .row -->
-      </div> <!-- / .container -->
-    </footer>
-
-    <!-- JAVASCRIPT -->
-    <!-- Map JS -->
-    <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
-    
-    <!-- Vendor JS -->
-    <script src="./assets/js/vendor.bundle.js"></script>
-    
-    <!-- Theme JS -->
-    <script src="./assets/js/theme.bundle.js"></script>
 
   </body>
 </html>
